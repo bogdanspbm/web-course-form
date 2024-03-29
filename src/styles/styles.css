@@ -41,6 +41,8 @@ select, textarea, input {
 }
 
 .button {
+    flex: 1;
+    cursor: pointer;
     border-radius: 5px;
     min-height: 2.5vw;
     background: #1677ff;
@@ -48,4 +50,24 @@ select, textarea, input {
     font-weight: 500;
     font-size: 1vw;
     margin-top: 1.5vw;
+}
+
+.button:hover {
+    background: #0958d9;
+}
+
+.reset-button {
+    flex: 1;
+    cursor: pointer;
+    border-radius: 5px;
+    min-height: 2.5vw;
+    border: 1px solid #1677ff;
+    color: #242424;
+    font-weight: 500;
+    font-size: 1vw;
+    margin-top: 1.5vw;
+}
+
+.reset-button:hover {
+    border: 1px solid #0958d9;
 }
