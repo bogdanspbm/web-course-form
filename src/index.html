@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+    @import "styles/styles.css";
+</style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+<form action="submit.php" class="form-container" method="POST" enctype="multipart/form-data">
+
+    <div class="input-block">
+        <label for="text">Text:</label>
+        <input type="text" id="text" name="text">
+    </div>
+
+    <div class="input-block">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password">
+    </div>
+
+    <div class="input-block">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+    </div>
+
+    <div class="input-block">
+        <label for="number">Number:</label>
+        <input type="number" id="number" name="number">
+    </div>
+
+
+    <div class="input-block">
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date">
+    </div>
+
+    <div class="row">
+        <label for="checkbox">Checkbox:</label>
+        <input type="checkbox" id="checkbox" name="checkbox" value="checkbox">
+    </div>
+
+    <div class="input-block">
+        <label for="textarea">Textarea:</label>
+        <textarea id="textarea" name="textarea"></textarea>
+    </div>
+
+    <div class="input-block">
+        <label>Radio:</label>
+        <div class="row">
+            <input type="radio" id="radio1" name="radio" value="option1">
+            <label for="radio1">Option 1</label>
+        </div>
+        <div class="row">
+            <input type="radio" id="radio2" name="radio" value="option2">
+            <label for="radio2">Option 2</label>
+        </div>
+    </div>
+
+    <div class="input-block">
+        <label for="select">Select:</label>
+        <select id="select" name="select">
+            <option value="option1">Option 1</option>
+            <option value="option2">Option 2</option>
+            <option value="option3">Option 3</option>
+        </select>
+    </div>
+    <div class="input-block">
+        <label for="file">File:</label>
+        <input type="file" id="file" name="file">
+    </div>
+
+    <input type="hidden" name="hidden" value="hidden_value">
+
+    <input type="submit" value="Submit" class="button">
+</form>
+</body>
+</html>
